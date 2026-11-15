@@ -1,0 +1,1085 @@
+/* Starter library, generated from protocols-library.json */
+const LIBRARY = {
+ "schema_version": 1,
+ "source": "Huberman Protocols - Implementation List (Nov 11, 2026)",
+ "settings": {
+  "layer_limits": {
+   "base": 5,
+   "l2": 5,
+   "test": 2
+  },
+  "xp_per_effort": 10,
+  "level_cost_per_level": 100,
+  "bonus_l2_week_target": 20,
+  "bonus_test_verdict": 50,
+  "xp_as_needed": 5,
+  "backfill_days": 3,
+  "weekly_checkin": false
+ },
+ "protocols": [
+  {
+   "id": "SP1",
+   "codes": [
+    "SP1",
+    "LP1"
+   ],
+   "pages": {
+    "SP1": 9,
+    "LP1": 359
+   },
+   "name": "Morning light",
+   "category": "Sleep",
+   "abstract": "Get bright light into your eyes soon after waking, outdoors if you can. It sets your body clock and helps you wake up.",
+   "type": "scheduled",
+   "layer": "base",
+   "suggested_layer": "base",
+   "effort": 1,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "morning",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "Light box in winter"
+  },
+  {
+   "id": "SP2",
+   "codes": [
+    "SP2",
+    "LP2"
+   ],
+   "pages": {
+    "SP2": 29,
+    "LP2": 370
+   },
+   "name": "Late afternoon light",
+   "category": "Sleep",
+   "abstract": "Get some outdoor light in the late afternoon or early evening. It helps your body clock cope with artificial light at night.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 0.5,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "afternoon",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP3",
+   "codes": [
+    "SP3",
+    "LP3",
+    "SP14"
+   ],
+   "pages": {
+    "SP3": 33,
+    "LP3": 375,
+    "SP14": 103
+   },
+   "name": "Evening light and screens",
+   "category": "Sleep",
+   "abstract": "Keep lights low and avoid screens in the last hour before bed, so bright light does not delay your sleep.",
+   "type": "scheduled",
+   "layer": "base",
+   "suggested_layer": "base",
+   "effort": 0.5,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "evening",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "SP14 merged into SP3"
+  },
+  {
+   "id": "SP4",
+   "codes": [
+    "SP4"
+   ],
+   "pages": {
+    "SP4": 41
+   },
+   "name": "Fixed sleep and wake times",
+   "category": "Sleep",
+   "abstract": "Find the sleep and wake times that suit you and keep them as steady as you can.",
+   "type": "scheduled",
+   "layer": "base",
+   "suggested_layer": "base",
+   "effort": 1,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "evening",
+   "goes_with": [
+    "LRP4"
+   ],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP5",
+   "codes": [
+    "SP5"
+   ],
+   "pages": {
+    "SP5": 59
+   },
+   "name": "Cool down at night",
+   "category": "Sleep",
+   "abstract": "Help your body cool down in the evening and at night, so falling asleep and staying asleep is easier.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP6",
+   "codes": [
+    "SP6"
+   ],
+   "pages": {
+    "SP6": 64
+   },
+   "name": "Warm up before waking",
+   "category": "Sleep",
+   "abstract": "Let your body warm up gently in the last hours of sleep, to make waking up easier.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP7",
+   "codes": [
+    "SP7"
+   ],
+   "pages": {
+    "SP7": 66
+   },
+   "name": "Nap",
+   "category": "Sleep",
+   "abstract": "A short nap of the right length to make up a small sleep shortfall.",
+   "type": "as_needed",
+   "layer": "as_needed",
+   "suggested_layer": "L2",
+   "effort": 0,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP8",
+   "codes": [
+    "SP8",
+    "SC3"
+   ],
+   "pages": {
+    "SP8": 73,
+    "SC3": 242
+   },
+   "name": "NSDR (deep rest)",
+   "category": "Sleep",
+   "abstract": "A guided deep-rest session done awake. Use it to recover from poor sleep, calm stress, and to fall and stay asleep.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 0.5,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP9",
+   "codes": [
+    "SP9"
+   ],
+   "pages": {
+    "SP9": 79
+   },
+   "name": "Sleep supplements",
+   "category": "Sleep",
+   "abstract": "Supplements that may support sleep. Talk to a doctor before trying.",
+   "type": "scheduled",
+   "layer": "doctor",
+   "suggested_layer": "Doctor",
+   "effort": 0,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": true,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP10",
+   "codes": [
+    "SP10"
+   ],
+   "pages": {
+    "SP10": 85
+   },
+   "name": "Prescription sleep drugs",
+   "category": "Sleep",
+   "abstract": "Be careful with prescription sleep drugs. Talk to a doctor.",
+   "type": "scheduled",
+   "layer": "doctor",
+   "suggested_layer": "Doctor",
+   "effort": 0,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": true,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP11",
+   "codes": [
+    "SP11"
+   ],
+   "pages": {
+    "SP11": 88
+   },
+   "name": "Caffeine schedule",
+   "category": "Sleep",
+   "abstract": "Change when you drink caffeine, for example stop earlier in the day, and see if your sleep improves.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "Test",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": 1,
+   "note": null
+  },
+  {
+   "id": "SP12",
+   "codes": [
+    "SP12"
+   ],
+   "pages": {
+    "SP12": 95
+   },
+   "name": "No alcohol before sleep",
+   "category": "Sleep",
+   "abstract": "Do not drink alcohol in the hours before bed, because it hurts sleep quality.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP13",
+   "codes": [
+    "SP13"
+   ],
+   "pages": {
+    "SP13": 99
+   },
+   "name": "No cannabis as sleep aid",
+   "category": "Sleep",
+   "abstract": "Do not use cannabis to help you sleep.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SP15",
+   "codes": [
+    "SP15"
+   ],
+   "pages": {
+    "SP15": 106
+   },
+   "name": "Jet lag tips",
+   "category": "Sleep",
+   "abstract": "A tip sheet for adjusting to a new time zone when you travel.",
+   "type": "as_needed",
+   "layer": "as_needed",
+   "suggested_layer": "?",
+   "effort": 0,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "Only when travelling"
+  },
+  {
+   "id": "EP1",
+   "codes": [
+    "EP1"
+   ],
+   "pages": {
+    "EP1": 138
+   },
+   "name": "Walk daily",
+   "category": "Exercise",
+   "abstract": "Walk as much as you can through the day.",
+   "type": "scheduled",
+   "layer": "base",
+   "suggested_layer": "base",
+   "effort": 1,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "day",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "EP2",
+   "codes": [
+    "EP2"
+   ],
+   "pages": {
+    "EP2": 146
+   },
+   "name": "Resistance training",
+   "category": "Exercise",
+   "abstract": "Strength training three times per week.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 1,
+   "freq_per_week": 3,
+   "target_override": 3,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "Set fixed weekdays"
+  },
+  {
+   "id": "EP3",
+   "codes": [
+    "EP3"
+   ],
+   "pages": {
+    "EP3": 184
+   },
+   "name": "Cardio training",
+   "category": "Exercise",
+   "abstract": "Cardiovascular training three times per week.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 1,
+   "freq_per_week": 3,
+   "target_override": 3,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "Set fixed weekdays"
+  },
+  {
+   "id": "EP4",
+   "codes": [
+    "EP4"
+   ],
+   "pages": {
+    "EP4": 196
+   },
+   "name": "Mobility and flexibility",
+   "category": "Exercise",
+   "abstract": "Short mobility and flexibility sessions, two to four times per week.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 0.5,
+   "freq_per_week": 3,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SC1",
+   "codes": [
+    "SC1"
+   ],
+   "pages": {
+    "SC1": 220
+   },
+   "name": "Physiological sighs",
+   "category": "Stress control",
+   "abstract": "One to three deliberate breathing sighs for fast stress relief.",
+   "type": "as_needed",
+   "layer": "as_needed",
+   "suggested_layer": "L2",
+   "effort": 0,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "Use when stressed"
+  },
+  {
+   "id": "SC2",
+   "codes": [
+    "SC2"
+   ],
+   "pages": {
+    "SC2": 227
+   },
+   "name": "Deliberate cold exposure",
+   "category": "Stress control",
+   "abstract": "Use cold exposure on purpose to raise your stress threshold.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "Test",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": 2,
+   "note": null
+  },
+  {
+   "id": "SC4",
+   "codes": [
+    "SC4"
+   ],
+   "pages": {
+    "SC4": 246
+   },
+   "name": "Micro meditation after waking",
+   "category": "Stress control",
+   "abstract": "A very short meditation right after waking up.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "SC5",
+   "codes": [
+    "SC5"
+   ],
+   "pages": {
+    "SC5": 250
+   },
+   "name": "Morning stress-hormone peak",
+   "category": "Stress control",
+   "abstract": "Ways to boost the natural morning peak of cortisol and adrenaline-type hormones, for energy and alertness.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "Test",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": 3,
+   "note": null
+  },
+  {
+   "id": "SC6",
+   "codes": [
+    "SC6"
+   ],
+   "pages": {
+    "SC6": 261
+   },
+   "name": "Stress supplements",
+   "category": "Stress control",
+   "abstract": "Supplements that may help with excessive stress. Talk to a doctor first.",
+   "type": "scheduled",
+   "layer": "doctor",
+   "suggested_layer": "Doctor",
+   "effort": 0,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": true,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP1",
+   "codes": [
+    "NP1"
+   ],
+   "pages": {
+    "NP1": 310
+   },
+   "name": "Unprocessed food",
+   "category": "Nutrition",
+   "abstract": "At least 90 percent of what you eat should be unprocessed or minimally processed.",
+   "type": "scheduled",
+   "layer": "base",
+   "suggested_layer": "base",
+   "effort": 1,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "day",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP2",
+   "codes": [
+    "NP2"
+   ],
+   "pages": {
+    "NP2": 317
+   },
+   "name": "Hydration",
+   "category": "Nutrition",
+   "abstract": "Stay hydrated through the day.",
+   "type": "scheduled",
+   "layer": "base",
+   "suggested_layer": "base",
+   "effort": 0.5,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "day",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP3",
+   "codes": [
+    "NP3"
+   ],
+   "pages": {
+    "NP3": 324
+   },
+   "name": "High CP:C protein",
+   "category": "Nutrition",
+   "abstract": "Choose protein with a high CP:C ratio (as defined in the book) at each full meal.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP4",
+   "codes": [
+    "NP4"
+   ],
+   "pages": {
+    "NP4": 328
+   },
+   "name": "Veg and fruit carbs",
+   "category": "Nutrition",
+   "abstract": "Get most of your carbohydrates from fibrous vegetables and some fruit.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP5",
+   "codes": [
+    "NP5"
+   ],
+   "pages": {
+    "NP5": 334
+   },
+   "name": "Healthy fats",
+   "category": "Nutrition",
+   "abstract": "Include healthy fats in most meals and snacks.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP6",
+   "codes": [
+    "NP6"
+   ],
+   "pages": {
+    "NP6": 339
+   },
+   "name": "Fermented foods",
+   "category": "Nutrition",
+   "abstract": "Eat low-sugar fermented foods.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 0.5,
+   "freq_per_week": 7,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "day",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "NP7",
+   "codes": [
+    "NP7"
+   ],
+   "pages": {
+    "NP7": 344
+   },
+   "name": "Fatty fish / omega-3",
+   "category": "Nutrition",
+   "abstract": "Eat fatty ocean fish, and/or consider omega-3 supplements.",
+   "type": "scheduled",
+   "layer": "l2",
+   "suggested_layer": "L2",
+   "effort": 0.5,
+   "freq_per_week": 3,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": "day",
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": "Supplements: doctor first"
+  },
+  {
+   "id": "LP4",
+   "codes": [
+    "LP4"
+   ],
+   "pages": {
+    "LP4": 385
+   },
+   "name": "Skin sunlight",
+   "category": "Light",
+   "abstract": "Get sunlight on your upper and lower body skin during the day.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "LP5",
+   "codes": [
+    "LP5"
+   ],
+   "pages": {
+    "LP5": 393
+   },
+   "name": "Long-wavelength light",
+   "category": "Light",
+   "abstract": "Expose skin and eyes to long-wavelength light (red, near-infrared, infrared).",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "LRP1",
+   "codes": [
+    "LRP1"
+   ],
+   "pages": {
+    "LRP1": 421
+   },
+   "name": "Alertness and focus",
+   "category": "Focus and learning",
+   "abstract": "Ways to shift into a state of alertness and focus.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "LRP2",
+   "codes": [
+    "LRP2"
+   ],
+   "pages": {
+    "LRP2": 465
+   },
+   "name": "Mental contrasting",
+   "category": "Focus and learning",
+   "abstract": "Picture your goal and the obstacles together, to build urgency and reach the goal.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "LRP3",
+   "codes": [
+    "LRP3"
+   ],
+   "pages": {
+    "LRP3": 477
+   },
+   "name": "Embrace errors",
+   "category": "Focus and learning",
+   "abstract": "Treat mistakes as useful signals to improve your performance.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "LRP4",
+   "codes": [
+    "LRP4"
+   ],
+   "pages": {
+    "LRP4": 484
+   },
+   "name": "Sleep after learning",
+   "category": "Focus and learning",
+   "abstract": "Prioritize good sleep the night after you learn something new.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [
+    "SP4"
+   ],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "LRP5",
+   "codes": [
+    "LRP5"
+   ],
+   "pages": {
+    "LRP5": 486
+   },
+   "name": "Micro rests in learning",
+   "category": "Focus and learning",
+   "abstract": "Take short micro rests inside your learning sessions.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "Test",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": 4,
+   "note": null
+  },
+  {
+   "id": "LRP6",
+   "codes": [
+    "LRP6"
+   ],
+   "pages": {
+    "LRP6": 489
+   },
+   "name": "Mental rehearsal",
+   "category": "Focus and learning",
+   "abstract": "Rehearse a skill in your mind to help you remember it.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "PG1",
+   "codes": [
+    "PG1"
+   ],
+   "pages": {
+    "PG1": 502
+   },
+   "name": "Present awareness",
+   "category": "Personal growth",
+   "abstract": "Replace mind wandering with awareness tied to the present moment.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "PG2",
+   "codes": [
+    "PG2"
+   ],
+   "pages": {
+    "PG2": 511
+   },
+   "name": "Hollis guide to your best life",
+   "category": "Personal growth",
+   "abstract": "Use James Hollis's approach to build your best life.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "PG3",
+   "codes": [
+    "PG3"
+   ],
+   "pages": {
+    "PG3": 527
+   },
+   "name": "Expressive writing",
+   "category": "Personal growth",
+   "abstract": "Write about inner pain points to work through them.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  },
+  {
+   "id": "PG4",
+   "codes": [
+    "PG4"
+   ],
+   "pages": {
+    "PG4": 533
+   },
+   "name": "Reframe loss",
+   "category": "Personal growth",
+   "abstract": "Reframe a loss to help you move through grief.",
+   "type": "scheduled",
+   "layer": "backlog",
+   "suggested_layer": "backlog",
+   "effort": 1,
+   "freq_per_week": null,
+   "target_override": null,
+   "fixed_weekdays": null,
+   "time_of_day": null,
+   "goes_with": [],
+   "doctor": false,
+   "custom": false,
+   "queue_order": null,
+   "note": null
+  }
+ ]
+};
