@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1f3a34"/>
+  <!-- three pyramid layers: test (top), layer 2, base -->
+  <path d="M256 92 L322 198 H190 Z" fill="#e0a03a"/>
+  <path d="M180 214 H332 L384 298 H128 Z" fill="#7fb59f"/>
+  <path d="M118 314 H394 L448 400 H64 Z" fill="#dfe9e3"/>
+</svg>
